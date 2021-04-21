@@ -29,6 +29,8 @@ jobs:
         with:
           images:
             bestlong/demo
+          flavor: |
+            suffix=-${{ matrix.php_version }}
 
       # ${{ env.TAG_PREFIX }}-${{ matrix.php_version }}
       - name: show info
