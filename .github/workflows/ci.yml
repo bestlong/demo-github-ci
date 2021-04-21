@@ -31,6 +31,8 @@ jobs:
             bestlong/demo
           flavor: |
             suffix=-${{ matrix.php_version }}
+          tags: |
+            type=raw,value=demo
 
       # ${{ env.TAG_PREFIX }}-${{ matrix.php_version }}
       - name: show info
