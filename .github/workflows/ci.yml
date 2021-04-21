@@ -32,6 +32,8 @@ jobs:
           flavor: |
             suffix=-${{ matrix.php_version }}
           tags: |
+            type=ref,event=branch
+            type=ref,event=tag
             type=raw,value=demo
 
       # ${{ env.TAG_PREFIX }}-${{ matrix.php_version }}
